@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': 'About', 'text': 'https://github.com/40823225/cp2019 \n \n', 'tags': '', 'url': 'About.html'}]};
+var tipuesearch = {"pages": [{'title': 'bout', 'text': 'https://github.com/40823225/cp2019 \n https://dartpad.dartlang.org?id=d31d7c060643eba448890ad756d03d64b99d3774 \n https://gist.github.com/40823225/d546cffc84c95439c18ff2030a518292 \n \n', 'tags': '', 'url': 'bout.html'}]};
