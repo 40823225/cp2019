@@ -1,27 +1,4 @@
-<h1>About</h1>
-<p><img alt="" height="570" src="/images/A1pUGkEO+gL._SL1500_.jpg" width="428"/></p>
-<p>倉儲 <a href="https://github.com/40823225/cp2019">https://github.com/40823225/cp2019</a></p>
-<p>Dart <a href="https://dartpad.dartlang.org/?id=d546cffc84c95439c18ff2030a518292">https://dartpad.dartlang.org/?id=d546cffc84c95439c18ff2030a518292</a></p>
-<p>原始碼</p>
-<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main () {
-   print("hello");
-}</pre>
-<p><iframe height="600" src="https://dartpad.dartlang.org/embed-html.html?gh_owner=40823225&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/hello&amp;theme=dark" width="800"></iframe></p>
-<p>原始碼</p>
-<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">int i;
-int sum;
- 
-main(){
-  sum = 0;
-  for(i=1;i &lt;= 10 ;i++){
-    sum += i;
-    print("$sum");
-  }
-  print('sum = $sum');
-}</pre>
-<p><iframe height="600" src="https://dartpad.dartlang.org/embed-html.html?gh_owner=40823225&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
-<p>原始碼:</p>
-<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">// 下列 Dart 程式, 利用 Runge Kutta 迭代運算法, 解常微分方程式
+// 下列 Dart 程式, 利用 Runge Kutta 迭代運算法, 解常微分方程式
 // 設 t 為時間, x 則設為物體的位移
 // 假設要解 F=ma 的單一質量加上彈簧 (常數為 k) 與黏滯阻尼 (常數為 b)
 // f 為沿位移方向的施力
@@ -56,7 +33,7 @@ rungeKutta(t0, x0, v0, t, h) {
 
   // 利用已知的 t0, x0, t 終點值與步階增量值 h, 迭代求 x 對應值
   // 索引值 i 將每次增量 1, 從 i=1 執行 for 環圈至 i=n
-  for (int i = 1; i &lt;= n; i++) {
+  for (int i = 1; i <= n; i++) {
     // 將此階段的 t 與 x 值代入 dxdt 與 dvdt 函式求下列四個浮點變數值
     // 因為必須兩個函式耦合, 必須同時計算
     double xk1 = h * dxdt(t0, x, v);
@@ -104,6 +81,3 @@ main() {
   double h = 0.1;
   rungeKutta(t0, x0, v0, t, h);
 }
-</pre>
-<p><iframe height="600" src="https://dartpad.dartlang.org/embed-html.html?gh_owner=40823225&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/Mass spring damping&amp;theme=dark" width="800"></iframe></p>
-<h1>work</h1>
