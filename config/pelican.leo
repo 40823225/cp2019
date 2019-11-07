@@ -98,7 +98,7 @@ Title: 期中考
 Date: 2019-11-7 11:02
 Category: Misc
 Tags: 2019FallCP
-Slug: 2019-Fall-Win10-1903
+Slug: 期中考
 Author: yen
 ---</t>
 <t tx="yen.20170108171605.1"></t>
