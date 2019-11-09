@@ -58,7 +58,6 @@
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2019</vh>
 <v t="leo.20180423103639.1"><vh>2019 Fall CP 課程</vh>
-<v t="leo.20191107223226.1"><vh>期中考</vh></v>
 <v t="leo.20180423103656.1"><vh>@edit 20191030.md</vh></v>
 </v>
 </v>
@@ -92,17 +91,6 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180115142025.1"></t>
 <t tx="leo.20180423103639.1"></t>
-<t tx="leo.20191107223226.1">@language md
----
-Title: 期中考
-Date: 2019-11-7 11:02
-Category: Misc
-Tags: 2019FallCP
-Slug: Midterm exam
-Author: yen
----
-
-從開學到目前所學的將其拍成影片</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
