@@ -58,7 +58,7 @@
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2019</vh>
 <v t="leo.20180423103639.1"><vh>2019 Fall CP 課程</vh>
-<v t="leo.20191109141645.1"><vh>期中考</vh></v>
+<v t="leo.20191109141645.1"><vh>Midterm exam</vh></v>
 <v t="leo.20180423103656.1"><vh>@edit 20191030.md</vh></v>
 </v>
 </v>
@@ -94,7 +94,7 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180423103639.1"></t>
 <t tx="leo.20191109141645.1">@language md
 ---
-Title: 期中考
+Title: Midterm exam
 Date: 2019-11-7 11:02
 Category: Misc
 Tags: 2019FallCP
