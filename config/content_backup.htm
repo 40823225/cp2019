@@ -238,8 +238,119 @@ document.getElementById("iframe").height = 600 ;
 <h4>純 Dart 程式</h4>
 <p><button onclick="getDart('cf_change')">Temp1</button></p>
 <h4>Html 程式</h4>
-<p><button onclick="getHtmlDart('cf_change')">Temp2</button> <!-- 內建放入的 Dart 原始碼 --></p>
+<p><button onclick="getHtmlDart('Temp2')">Temp2</button> <!-- 內建放入的 Dart 原始碼 --></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p></p>
 <p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823225&amp;gh_repo=cp2019&amp;gh_path=new/cf_change&amp;theme=dark" width="900"></iframe></p>
 <p></p>
+<h2>w14</h2>
+<p><canvas height="200" id="canvas" width="300"></canvas></p>
+<script src="/get_page/downloads/dart_ex/roc_flag/roc_flag.js"></script>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">import 'dart:html';
+import 'dart:math' as Math;
+ 
+CanvasElement canvas;
+CanvasRenderingContext2D ctx;
+int flag_w = 300;
+int flag_h = 200;
+num circle_x = flag_w / 4;
+num circle_y = flag_h / 4;
+ 
+void main() {
+  canvas = querySelector('#canvas');
+  ctx = canvas.getContext('2d');
+ 
+  drawROC(ctx);
+  querySelector("#roc").onClick.listen((e) =&gt; drawROC(ctx));
+  querySelector("#usa").onClick.listen((e) =&gt; drawUSA(ctx));
+  querySelector("#button").onClick.listen((e) =&gt; clearCanvas());
+}
+ 
+void drawUSA(ctx){
+  // 請畫出美國國旗
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.font = "30px Arial";
+  ctx.strokeStyle = 'rgb(255, 0, 0)';
+  ctx.strokeText("請畫出美國國旗", flag_w/6, flag_w/4);
+}
+ 
+void drawROC(ctx){
+  // 先畫滿地紅
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  // 再畫青天
+  ctx.fillStyle = 'rgb(0, 0, 150)';
+  ctx.fillRect(0, 0, flag_w / 2, flag_h / 2);
+  // 畫十二道光芒白日
+  ctx.beginPath();
+  num star_radius = flag_w / 8;
+  num angle = 0;
+  for (int i = 0; i &lt; 25; i++) {
+    angle += 5 * Math.pi * 2 / 12;
+    num toX = circle_x + Math.cos(angle) * star_radius;
+    num toY = circle_y + Math.sin(angle) * star_radius;
+    // 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i != 0)
+      ctx.lineTo(toX, toY);
+    else
+      ctx.moveTo(toX, toY);
+  }
+  ctx.closePath();
+  // 將填色設為白色
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+  // 白日:藍圈
+  ctx.beginPath();
+  ctx.arc(circle_x, circle_y, flag_w * 17 / 240, 0, Math.pi * 2, true);
+  ctx.closePath();
+  // 填色設為藍色
+  ctx.fillStyle = 'rgb(0, 0, 149)';
+  ctx.fill();
+  // 白日:白心
+  ctx.beginPath();
+  ctx.arc(circle_x, circle_y, flag_w / 16, 0, Math.pi * 2, true);
+  ctx.closePath();
+  // 填色設為白色
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+}
+ 
+void clearCanvas(){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+}</pre>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823225&gh_repo=cp2019&gh_path=downloads/new/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823225&gh_repo=cp2019&gh_path=downloads/new/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823225&gh_repo=cp2019&gh_path=downloads/new/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getDart('function')">Function</button> <button onclick="getDart('fun_parameter')">Function Parameter</button> <button onclick="getDart('fat_arrow')">Fat Arrow</button> <button onclick="getDart('Temp1')">Temp 1</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('Temp2')">temp2</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter0')">Flutter0</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823225&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
