@@ -1,11 +1,11 @@
 import "dart:html";
 
 lbtokg(num lb){
-return lb*0.454;
+return lb*0.453592;
 }
 
 kgtolb(num kg){
-return kg*2.205;
+return kg*2.204622;
 }
 
 main() {
