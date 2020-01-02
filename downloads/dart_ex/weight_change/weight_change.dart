@@ -27,9 +27,9 @@ convert(String data){
   
   number = int.parse(number);
   if (type == "L" || type == "l"){
-     output.innerHtml = " $number 英磅 =  ${lbtokg(number).toStringAsFixed(2)} 公斤";
+     output.innerHtml = " $number 英磅 =  ${lbtokg(number).toStringAsFixed(4)} 公斤";
   } else if ((type == "K" || type == "k")){
-     output.innerHtml = " $number 公斤 =  ${kgtolb(number).toStringAsFixed(2)} 英磅";
+     output.innerHtml = " $number 公斤 =  ${kgtolb(number).toStringAsFixed(4)} 英磅";
   } else {
      output.innerHtml = "請輸入數字加上 LB 或 KG!";
   }
