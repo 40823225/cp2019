@@ -362,44 +362,7 @@ document.getElementById("iframe").height = 600 ;
 <p>學員名單 URL: <input id="studListUrl" size="50" type="text" value="https://mde.tw/cp2019/downloads/2019fall_cp_1b_list.txt"/><br/> 每組人數: <input id="grpNum" size="3" type="text" value="10"/><br/> <input id="submit" type="submit" value="開始分組"/><br/> <textarea cols="80" id="output" rows="10"></textarea></p>
 <script src="/get_page/downloads/dart_ex/random_grouping/random_grouping.js"></script>
 <p><!-- ############################## --></p>
-<p style="padding-left: 120px;"><a href="https://dartpad.github.io/?id=d3cb64358254003bcd12dbe64ec9859b">設一乙亂數分組</a></p>
-<!-- footer -->
-<div class="container">
-<div class="row pt-3 mx-auto">
-<p><br/><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-</div>
-</div>
-<!-- for footer -->
-<p></p>
-<!-- for site wrap -->
-<p></p>
-<!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
-<script src="/get_page/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/jquery-ui.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/popper.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/bootstrap.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/aos.js"></script>
-<!--
-            <script src="../cmsimde/static/chimper/js/typed.js"></script>
-                    <script>
-                    var typed = new Typed('.typed-words', {
-                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
-                    typeSpeed: 80,
-                    backSpeed: 80,
-                    backDelay: 4000,
-                    startDelay: 1000,
-                    loop: true,
-                    showCursor: true
-                    });
-                    </script>
-            -->
-<script src="/get_page/cmsimde/static/chimper/js/main.js"></script>
-<h2>w16查驗考試</h2>
+<p style="padding-left: 120px;"><a href="https://dartpad.github.io?id=8463c358dfeb477801b2c42737697e82">設一乙亂數分組</a></p><h2>w16查驗考試</h2>
 <p>倉儲:<a href="https://github.com/40823225/cp2019/">https://github.com/40823225/cp2019/</a></p>
 <p>網頁:<a href="https://40823225.github.io/cp2019/content/About.html">https://40823225.github.io/cp2019/content/About.html</a></p>
 <p>影片:<a href="https://www.youtube.com/watch?v=lA8qhv0aSxQ&amp;feature=youtu.be">https://www.youtube.com/watch?v=lA8qhv0aSxQ&amp;feature=youtu.be</a></p>
@@ -407,17 +370,17 @@ document.getElementById("iframe").height = 600 ;
 <h2>w17 test</h2>
 <script>
 function getDart(dirname){
-    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823225&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823251&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
 }
 
 function getHtmlDart(dirname){
-    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823225&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823251&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
 document.getElementById("iframe").src = source ;
 }
 
 function getFlutter(dirname){
-    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823225&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823251&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
 document.getElementById("iframe").src = source ;
 }
 
@@ -435,14 +398,17 @@ document.getElementById("iframe").height = 600 ;
 <h4>純 Dart 程式</h4>
 <p><button onclick="getDart('weight')">重量</button></p>
 <h4>Html 程式</h4>
-<p><button onclick="getHtmlDart('weight_change')">重量轉換</button> <!-- 內建放入的 Dart 原始碼 --></p>
+<p><button onclick="getHtmlDart('weight_change')">重量轉換</button> <button onclick="getHtmlDart('flag')">各國國旗</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823201&amp;gh_repo=cp2019&amp;gh_path=downloads/new/weight&amp;theme=dark" width="800"></iframe></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823251&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight&amp;theme=dark" width="800"></iframe></p>
 <p>請輸入所要轉換的重量以數字加上 KG 或 LB:<br/><input id="weight" max="30" min="0" type="text" value="10KG"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
 <p>
-<script src="https://40823225.github.io/cp2019/downloads/dart_ex/weight_change/weight_change.js"></script>
+<script src="https://40823251.github.io/cp2019/downloads/dart_ex/weight_change/weight_change.js"></script>
+<script src="https://40823224.github.io/cp2019/downloads/dart_ex/weight_change/weight_change.js"></script>
 </p>
 <p><canvas height="200" id="canvas" width="300"></canvas></p>
+<p><button id="button">Clear Canvas</button> <button id="cuba">Draw Cuba</button> <button id="china">Draw CHINA</button> <button id="San">Draw SAN</button> <button id="usa">Draw USA</button> <button id="uk">Draw UK</button> <button id="canada">Draw Canada</button></p>
 <p>
-<script src="https://40823225.github.io/cp2019/downloads/dart_ex/flag/flag.js"></script>
+<script src="https://40823251.github.io/cp2019/downloads/dart_ex/flag/flag.js"></script>
 </p>
