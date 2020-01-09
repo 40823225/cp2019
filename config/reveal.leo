@@ -36,8 +36,10 @@
 </v>
 <v t="leo.20200109125404.1"><vh>newHeadline</vh>
 <v t="leo.20200109125412.1"><vh>newHeadline</vh></v>
-<v t="leo.20200109135244.1"><vh>newHeadline</vh></v>
 </v>
+</v>
+<v t="leo.20200109135714.1"><vh>newHeadline</vh>
+<v t="leo.20200109135244.1"><vh>newHeadline</vh></v>
 </v>
 </v>
 </v>
@@ -105,7 +107,7 @@ Created by [40823225](https://40823225.github.io/cp2019/content/index.html)
 </t>
 <t tx="leo.20180902120523.15"># 溫度轉換
 
- &lt;iframe width="800" height="600" src="https://dartpad.dartlang.org/embed-html.html?gh_owner=40823225&amp;amp;gh_repo=cp2019&amp;amp;gh_path=new/Temp1&amp;amp;theme=dark"&gt;&lt;/iframe&gt;</t>
+ &lt;iframe src="https://dartpad.dartlang.org/embed-html.html?gh_owner=40823225&amp;amp;gh_repo=cp2019&amp;amp;gh_path=new/Temp1&amp;amp;theme=dark"&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -314,8 +316,17 @@ vertical: body pane on the botton</t>
 <t tx="leo.20200109125412.1"># 心得
 
 這次w18做的心得，是介紹說我們整學期所做的內容，有w3的hello、w6的for迴圈、w7的解微分方程式、w8的部落格、w11的按鈕、w12的CF轉換、w14的JS國旗、w15的亂數分組、w16的查驗考試、到w17的期末考、最後到第w18使用瀏覽器中個人的 Reveal.js 簡報系統, 且在不登入 Github 個人帳號情況下進行簡報以上為本學期所學之內容。</t>
-<t tx="leo.20200109135244.1"># 自評成績
+<t tx="leo.20200109135244.1">#  自評成績
 
 我的自評成績是60分，不可否認的是我大部分的內容都是複製來的，但我在複製完後會再回去看裡面所寫內容，去了解看看別人的成績是怎麼寫的，所以給了自己60分</t>
+<t tx="leo.20200109135714.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
 </tnodes>
 </leo_file>
