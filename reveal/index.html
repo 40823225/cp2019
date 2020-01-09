@@ -39,15 +39,15 @@ CMSimfly 網際內容管理
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-## CMSimfly 網際內容管理
+## 2019 Fall 40823225 計算機程式課程
 
-### KMOLab
+### 徐誠隆
 
 <small>
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [40823225](https://40823225.github.io/cp2019/content/index.html)
 </small>
 
-[CMSimfly 網誌](./../blog/index.html)
+[CMSimfly 網誌](https://40823225.github.io/cp2019/blog/index.html)
 
 
     </script>
@@ -57,14 +57,14 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 投影片快捷鍵
+# 目錄
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+* 溫度的轉換
+*各組溫度的轉換
+*繪製國旗
+*亂數分組
+*查驗考試
+*心得
 
     </script>
 </section>
@@ -75,12 +75,9 @@ Created by [KMOLab](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
+# 溫度的轉換與方程式
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
+ <iframe src="https://dartpad.github.io/embed-html.html?gh_owner=40823225&gh_repo=cp2019&gh_path=downloads/new/Temp1&theme=dark" width="800" height="550"></iframe>
     </script>
 </section>
 
@@ -90,32 +87,9 @@ $$I = \int \rho R^{2} dV$$
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+# 各組溫度格式方程式
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+ <iframe src="https://dartpad.github.io/embed-html.html?gh_owner=40823225&gh_repo=cp2019&gh_path=downloads/new/Temp2&theme=dark" width="800" height="550"></iframe>
     </script>
 </section>
 
@@ -124,11 +98,19 @@ make.start()
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+# 查驗考試
 
-### 導入影片 template
+ <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="800" src="https://www.youtube.com/embed/lA8qhv0aSxQ" width="1903">
+    </script>
+</section>
 
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 心得
+
+這次w18做的心得，是介紹說我們整學期所做的內容，有w3的hello、w6的for迴圈、w7的解微分方程式、w8的部落格、w11的按鈕、w12的CF轉換、w14的JS國旗、w15的亂數分組、w16的查驗考試、到w17的期末考、最後到第w18使用瀏覽器中個人的 Reveal.js 簡報系統, 且在不登入 Github 個人帳號情況下進行簡報以上為本學期所學之內容。
     </script>
 </section>
 
