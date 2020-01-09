@@ -24,6 +24,9 @@
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
+<v t="leo.20200109141825.1"><vh>newHeadline</vh>
+<v t="leo.20200109141847.1"><vh>newHeadline</vh></v>
+</v>
 <v t="leo.20180902120523.13"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
@@ -72,13 +75,17 @@ Created by [40823225](https://40823225.github.io/cp2019/content/index.html)
 </t>
 <t tx="leo.20180902120523.12"># 目錄
 
-* [溫度的轉換](https://40823225.github.io/cp2019/reveal/index.html#/2)
+* [hello](https://40823225.github.io/cp2019/reveal/index.html#/2)
 
-* [各組溫度的轉換](https://40823225.github.io/cp2019/reveal/index.html#/2/1)
+* [溫度的轉換](https://40823225.github.io/cp2019/reveal/index.html#/2/1)
 
-* [查驗考試](https://40823225.github.io/cp2019/reveal/index.html#/2/2)
+* [各組溫度的轉換](https://40823225.github.io/cp2019/reveal/index.html#/2/2)
 
-* [心得](https://40823225.github.io/cp2019/reveal/index.html#/2/3)
+* [查驗考試](https://40823225.github.io/cp2019/reveal/index.html#/2/3)
+
+* [心得](https://40823225.github.io/cp2019/reveal/index.html#/2/4)
+
+* [自評](https://40823225.github.io/cp2019/reveal/index.html#/2/5)
 
 
     &lt;/script&gt;
@@ -315,5 +322,16 @@ vertical: body pane on the botton</t>
 
 						
 </t>
+<t tx="leo.20200109141825.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						</t>
+<t tx="leo.20200109141847.1"># hello
+
+ &lt;iframe height="600" src="https://dartpad.dartlang.org/embed-html.html?gh_owner=40823225&amp;amp;gh_repo=cp2019&amp;amp;gh_path=downloads/dart_ex/hello&amp;amp;theme=dark" width="800"&gt;</t>
 </tnodes>
 </leo_file>
