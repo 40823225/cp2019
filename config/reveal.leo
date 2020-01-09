@@ -24,10 +24,8 @@
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
-<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
+<v t="leo.20180902120523.13"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
-</v>
 <v t="leo.20180902120523.16"><vh>導入縮排程式碼</vh>
 <v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
 </v>
@@ -94,17 +92,6 @@ Created by [40823225](https://40823225.github.io/cp2019/content/index.html)
 
 
 						</t>
-<t tx="leo.20180902120523.14">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
 <t tx="leo.20180902120523.15"># 溫度轉換
 
  &lt;iframe src="https://dartpad.dartlang.org/embed-html.html?gh_owner=40823225&amp;amp;gh_repo=cp2019&amp;amp;gh_path=downloads/new/Temp1&amp;amp;theme=dark"&gt;&lt;/iframe&gt;</t>
