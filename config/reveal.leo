@@ -72,9 +72,12 @@ Created by [40823225](https://40823225.github.io/cp2019/content/index.html)
 <t tx="leo.20180902120523.12"># 目錄
 
 * [溫度的轉換](https://40823225.github.io/cp2019/reveal/index.html#/2)
-*[各組溫度的轉換](https://40823251.github.io/cp2019/reveal/index.html#/2/1)
-*[查驗考試](https://40823251.github.io/cp2019/reveal/index.html#/2/2)
-*[心得](https://40823251.github.io/cp2019/reveal/index.html#/2/3)
+
+* [各組溫度的轉換](https://40823251.github.io/cp2019/reveal/index.html#/2/1)
+
+* [查驗考試](https://40823251.github.io/cp2019/reveal/index.html#/2/2)
+
+* [心得](https://40823251.github.io/cp2019/reveal/index.html#/2/3)
 
 </t>
 <t tx="leo.20180902120523.13">&lt;section data-markdown&gt;
